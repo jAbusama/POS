@@ -1,0 +1,12 @@
+.content {
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.empty-element {
+  min-height: 64px;
+}

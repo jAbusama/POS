@@ -1,0 +1,143 @@
+.nav {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.drawer {
+}
+
+.drawer--docked {
+  flex: 0 0 auto;
+}
+
+.drawer--root {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+}
+
+.drawer--regular {
+  width: 240px;
+}
+
+.drawer--left {
+  left: 0;
+  right: auto;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.drawer--head {
+  min-height: 64px;
+}
+
+.drawer--menu-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+.drawer--button {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.drawer--menu-item {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.drawer--menu-icon {
+  color: #fff;
+  display: inline-flex;
+  min-width: 56px;
+  flex-shrink: 0;
+}
+
+.icon {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.drawer--menu-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.typorgraphy {
+  margin: 0;
+}
+.typography--primary {
+}
+.typography--body {
+  font-size: 1rem;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.typography--block {
+  display: block;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.gutter-2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding--1x {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
