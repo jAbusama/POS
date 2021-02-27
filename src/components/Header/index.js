@@ -1,9 +1,9 @@
-import style from './style.css';
+import './style.scss';
 
 const Header = () => {
   return (
-    <header className='header--appBar header--fixPosition header--width header--primary'>
-      <div className='header--toolbar header--toolbar-regular gutter'>
+    <header className='header__appBar header__fix header__width header__primary'>
+      <div className='header__appBar-toolbar header__appBar-regular gutter'>
         Header
       </div>
     </header>

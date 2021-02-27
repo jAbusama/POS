@@ -1,0 +1,89 @@
+.effect {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.dribble {
+  &__animation {
+    animation: ripple 650ms linear both;
+  }
+
+  &__default {
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(66, 66, 66, 0) 0%,
+      #03a9f4 7%,
+      #03a9f4 30%,
+      rgba(66, 66, 66, 0) 60%,
+      rgba(66, 66, 66, 0.3) 100%
+    );
+  }
+
+  &__primary {
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(66, 66, 66, 0) 0%,
+      #2196f3 7%,
+      #2196f3 30%,
+      rgba(66, 66, 66, 0) 60%,
+      rgba(66, 66, 66, 0.3) 100%
+    );
+  }
+
+  &__secondary {
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(66, 66, 66, 0) 0%,
+      #9e9e9e 7%,
+      #9e9e9e 30%,
+      rgba(66, 66, 66, 0) 60%,
+      rgba(66, 66, 66, 0.3) 100%
+    );
+  }
+
+  &__danger {
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(66, 66, 66, 0) 0%,
+      #f44336 7%,
+      #f44336 30%,
+      rgba(66, 66, 66, 0) 60%,
+      rgba(66, 66, 66, 0.3) 100%
+    );
+  }
+
+  &__dark {
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(66, 66, 66, 0) 0%,
+      #424242 7%,
+      #424242 30%,
+      rgba(66, 66, 66, 0) 60%,
+      rgba(66, 66, 66, 0.3) 100%
+    );
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(3);
+  }
+}
+
+@-webkit-keyframes ripple {
+  from {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(3);
+  }
+}

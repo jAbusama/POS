@@ -1,7 +1,7 @@
 import Layout from '../../layouts/MainLayout';
 
 const Dashboard = () => {
-  return <Layout>Content</Layout>;
+  return <Layout>Dashboard</Layout>;
 };
 
 export default Dashboard;

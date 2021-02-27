@@ -1,43 +1,37 @@
-.nav {
+.navigation {
   width: 240px;
   flex-shrink: 0;
-}
 
-.drawer {
-}
+  &__drawer {
+    flex: 0 0 auto;
 
-.drawer--docked {
-  flex: 0 0 auto;
-}
-
-.drawer--root {
-  top: 0;
-  flex: 1 0 auto;
-  height: 100%;
-  display: flex;
-  outline: 0;
-  z-index: 1200;
-  position: fixed;
-  overflow-y: auto;
-  flex-direction: column;
-  -webkit-overflow-scrolling: touch;
-  color: #fff;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #424242;
-}
-
-.drawer--regular {
-  width: 240px;
-}
-
-.drawer--left {
-  left: 0;
-  right: auto;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.drawer--head {
-  min-height: 64px;
+    &-primary {
+      width: 240px;
+      top: 0;
+      flex: 1 0 auto;
+      height: 100%;
+      display: flex;
+      outline: 0;
+      z-index: 1200;
+      position: fixed;
+      overflow-y: auto;
+      flex-direction: column;
+      -webkit-overflow-scrolling: touch;
+      color: #fff;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      background-color: #424242;
+    }
+    &-left {
+      left: 0;
+      right: auto;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    &-header {
+      min-height: 64px;
+      text-align: center;
+      align-items: center;
+    }
+  }
 }
 
 .drawer--menu-list {
@@ -140,4 +134,14 @@
 .padding--1x {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.item__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

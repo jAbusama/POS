@@ -1,11 +1,7 @@
 import React, { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
 import Ripple from '../../Animations/Ripple';
-import './style.scss';
 
-const ButtonContainer = (props) => {
-  const { type = 'default', size, children } = props;
-
+const ListItem = () => {
   const buttonRef = useRef(null);
   const [effects, setEffects] = useState([]);
 
@@ -23,21 +19,17 @@ const ButtonContainer = (props) => {
   };
 
   return (
-    <button
+    <div
+      className='list__item gutter-x-2 list__base list__button'
       ref={buttonRef}
-      className={`btn btn-small btn__${type}`}
       onClick={onClickButton}
     >
-      <Ripple buttonRef={buttonRef} toggle={effects} type={type}>
-        <span className='btn__label'>{children}</span>
+      <Ripple buttonRef={buttonRef} toggle={effects} type='secondary'>
+        <div className='list__item-icon'>Icon</div>
+        <div className='list__item-label'>Label</div>
       </Ripple>
-    </button>
+    </div>
   );
 };
 
-ButtonContainer.prototype = {
-  type: PropTypes.oneOf(['default', 'primary', 'secondary', 'danger', 'dark']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-};
-
-export default ButtonContainer;
+export default ListItem;
