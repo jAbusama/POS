@@ -1,7 +1,8 @@
-import List from '../List';
+import List from './List';
+import routes from '../../navigation/Routes';
 import './style.scss';
 
-const Nav = () => {
+const Sidebar = () => {
   return (
     <nav className='navigation'>
       <div className='navigation__drawer navigation__docked'>
@@ -10,7 +11,7 @@ const Nav = () => {
             <h4 className='heading__secondary'>Drawer Head</h4>
           </div>
           <div className='divider'></div>
-          <List />
+          <List data={routes} />
           <div className='divider'></div>
         </div>
       </div>
@@ -18,4 +19,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Sidebar;

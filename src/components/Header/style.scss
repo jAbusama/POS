@@ -14,7 +14,7 @@
     }
 
     &-regular {
-      min-height: 64px;
+      min-height: 6.4rem;
     }
   }
   &__fix {
@@ -24,16 +24,48 @@
     position: fixed;
   }
   &__width {
-    width: calc(100% - 240px);
-    margin-left: 240px;
+    width: calc(100% - 24rem);
+    margin-left: 24rem;
   }
   &__primary {
     color: rgba(0, 0, 0, 0.87);
-    background-color: #90caf9;
+    background-color: #efefef;
+  }
+
+  &__left {
+    flex-grow: 1;
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-search {
+      margin-right: 1.6rem;
+    }
+
+    &-notification {
+      margin: 0 0.8rem;
+    }
+
+    &-profile {
+    }
+  }
+}
+
+//global
+.divider {
+  &__vertical {
+    border: none;
+    width: 0.1rem;
+    flex-shrink: 0;
+    background-color: #424242;
+    height: 3.2rem;
+    margin: 0 0.8rem;
   }
 }
 
 .gutter {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }

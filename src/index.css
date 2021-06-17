@@ -1,7 +1,9 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 html {
   font-size: 62.5%;
@@ -10,8 +12,21 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
-  /* line-height: 1.7; */
-  /* color: $color-grey-dark; */
-  /* padding: 3rem; */
+  box-sizing: border-box;
+  color: #777;
+}
+
+.content {
+  height: 100vh;
+  background: #f7f7f7;
+  padding: 2.4rem;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.empty-element {
+  min-height: 6.4rem;
 }

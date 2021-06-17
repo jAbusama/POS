@@ -4,20 +4,28 @@
   position: relative;
   list-style: none;
 
+  &__link {
+  }
+
+  .item-active {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
   &__item {
+    color: #fff;
     width: 100%;
+    font-size: 1.6rem;
     display: flex;
     position: relative;
     box-sizing: border-box;
     text-align: left;
     align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     justify-content: flex-start;
     text-decoration: none;
     overflow: hidden;
 
-    color: inherit;
     border: 0;
     cursor: pointer;
     margin: 0;
@@ -32,15 +40,15 @@
     &-icon {
       color: #fff;
       display: inline-flex;
-      min-width: 56px;
+      min-width: 4rem;
       flex-shrink: 0;
     }
 
     &-label {
       flex: 1 1 auto;
       min-width: 0;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
     }
   }
 
@@ -55,11 +63,11 @@
 }
 
 .pd-y-1 {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 .gutter-x-2 {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }

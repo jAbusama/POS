@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
 import Ripple from '../../Animations/Ripple';
+import { Lock } from '@material-ui/icons';
 
-const ListItem = () => {
+const DropdownItem = (props) => {
+  const { iconRight, iconLeft, data } = props;
   const buttonRef = useRef(null);
   const [effects, setEffects] = useState([]);
 
@@ -19,17 +21,24 @@ const ListItem = () => {
   };
 
   return (
-    <div
-      className='list__item gutter-x-2 list__base list__button'
+    <a
+      href='#'
+      className='dropdown__item'
+      key={data}
       ref={buttonRef}
       onClick={onClickButton}
     >
       <Ripple buttonRef={buttonRef} toggle={effects} type='secondary'>
-        <div className='list__item-icon'>Icon</div>
-        <div className='list__item-label'>Label</div>
+        <span className='dropdown__item-icon'>
+          <Lock fontSize='large' />
+        </span>
+        <span className='dropdown__item-label'>{data}</span>
+        {iconLeft && (
+          <span className='dropdown__item-iconLeft'>{iconLeft}</span>
+        )}
       </Ripple>
-    </div>
+    </a>
   );
 };
 
-export default ListItem;
+export default DropdownItem;

@@ -1,21 +1,22 @@
 import React from 'react';
-
-import Header from '../components/Header';
-import Nav from '../components/Nav';
+import { RouterConfig } from '../navigation/RouterConfig';
+import Header from 'components/Header';
+import Sidebar from 'components/Sidebar';
 
 import './style.css';
 
 const MainLayout = ({ children }) => {
-  return (
-    <div className='flex'>
-      <Header />
-      <Nav />
-      <main className='content'>
-        <div className='empty-element'></div>
-        {children}
-      </main>
-    </div>
-  );
+	return (
+		<div className='flex'>
+			<Header />
+			<Sidebar />
+
+			<main className='content'>
+				<div className='empty-element'></div>
+				<RouterConfig />
+			</main>
+		</div>
+	);
 };
 
 export default MainLayout;

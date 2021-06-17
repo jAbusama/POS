@@ -1,7 +1,7 @@
 .content {
   height: 100vh;
   background: #f7f7f7;
-  padding: 24px;
+  padding: 2.4rem;
   flex-grow: 1;
 }
 
@@ -10,5 +10,5 @@
 }
 
 .empty-element {
-  min-height: 64px;
+  min-height: 6.4rem;
 }
